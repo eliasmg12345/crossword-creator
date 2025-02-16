@@ -39,7 +39,7 @@ export const Sidebar = () => {
             </button>
 
             <Link
-                href="/maker/maker"
+                href="/maker"
             >
             <span>Do Crossword</span>
             </Link>
