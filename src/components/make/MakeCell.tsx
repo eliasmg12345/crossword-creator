@@ -13,9 +13,9 @@ export const MakeCell = () => {
     const [right, setRight] = useState(false)
 
     const [textTop, setTextTop] = useState('')
-    const [textBottom, setTextBottom] = useState('-')
-    const [textLeft, setTextLeft] = useState('-')
-    const [textRight, setTextRight] = useState('-')
+    const [textBottom, setTextBottom] = useState('')
+    const [textLeft, setTextLeft] = useState('')
+    const [textRight, setTextRight] = useState('')
 
 
     return (
@@ -29,7 +29,7 @@ export const MakeCell = () => {
                         setLeft(false)
                     }
                 }
-                className="absolute top-0 w-full text-center cursor-pointer hover:text-sky-600 hover:border hover:border-sky-500 p-2"
+                className="absolute top-0 h-5 w-full text-center cursor-pointer hover:text-sky-600 hover:border hover:border-sky-500"
             >
                 {textTop}
             </div>
@@ -42,7 +42,7 @@ export const MakeCell = () => {
                         setLeft(false)
                     }
                 }
-                className="absolute top-[4.00rem] right-[-2.00rem] h-8 w-24 rotate-90 text-center cursor-pointer hover:text-sky-600 hover:border hover:border-sky-500"
+                className="absolute top-[4.50rem] right-[-4.5rem] h-5 w-40 rotate-90 text-center cursor-pointer hover:text-sky-600 hover:border hover:border-sky-500"
             >
                 {textRight}
             </div>
@@ -55,7 +55,7 @@ export const MakeCell = () => {
                         setLeft(false)
                     }
                 }
-                className="absolute top-[8.00rem] w-full text-center cursor-pointer hover:text-sky-600 hover:border hover:border-sky-500"
+                className="absolute top-[9.00rem] h-5 w-full text-center cursor-pointer hover:text-sky-600 hover:border hover:border-sky-500"
             >
                 {textBottom}
             </div>
@@ -68,7 +68,7 @@ export const MakeCell = () => {
                         setLeft(!left)
                     }
                 }
-                className="absolute top-[4.00rem] left-[-2.00rem] h-8 w-24 -rotate-90 text-center cursor-pointer hover:text-sky-600 hover:border hover:border-sky-500"
+                className="absolute top-[4.50rem] left-[-4.50rem] h-5 w-40 -rotate-90 text-center cursor-pointer hover:text-sky-600 hover:border hover:border-sky-500"
             >
                 {textLeft}
             </div>

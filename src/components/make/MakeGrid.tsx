@@ -6,7 +6,7 @@ import { MakeTable } from "@/components"
 
 export const MakeGrid = () => {
 
-    const [sizeH, setSizeH] = useState(0)
+    const [sizeH, setSizeH] = useState(1)
     const [sizeW, setSizeW] = useState(0)
 
     return (

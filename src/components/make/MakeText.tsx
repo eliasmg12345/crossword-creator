@@ -26,21 +26,29 @@ export const MakeText = ({ top, bottom, left, right, valueTextTop, valueTextBott
                 top ?
                     <input
                         type="text"
+                        className="mt-16 text-black w-full"
+                        autoFocus
                         onChange={e => valueTextTop(e.target.value)}
                     />
                     : bottom ?
                         <input
                             type="text"
+                            className="mt-16 text-black w-full"
+                            autoFocus
                             onChange={e => valueTextBottom(e.target.value)}
                         />
                         : left ?
                             <input
                                 type="text"
+                                className="mt-16 text-black w-full"
+                                autoFocus
                                 onChange={e => valueTextLeft(e.target.value)}
                             />
                             : right &&
                             <input
                                 type="text"
+                                className="mt-16 text-black w-full"
+                                autoFocus
                                 onChange={e => valueTextRight(e.target.value)}
                             />
 
